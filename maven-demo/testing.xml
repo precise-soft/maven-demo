@@ -4,6 +4,7 @@
 	<test name="Test">
 		<classes>
 			<class name="com.tatcs.testPackage.LoadTest01" />
+			<class name="com.tatcs.testPackage.LoadTest02" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
