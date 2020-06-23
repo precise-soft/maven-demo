@@ -1,35 +1,73 @@
 package com.tatcs.testPackage;
 
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.tatcs.frameworkPackage.BrowserFactory;
 
-public class LoadTest02{
+public class LoadTest02 {
+	public WebDriver driver;
+	public String browserName;
+	public String baseURL="https://www.google.com/"; 
 
-	private WebDriver driver;
-	public LoadTest02(){
-	}
-	
-	@BeforeClass
-	public void beforeClass() {
-		new BrowserFactory();
-		driver = BrowserFactory.getDriver("ie");
-	}
-	@Test
-	public void returnTicket() {
-		try {
-			// TODO
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	@Parameters("browser")
+
+	@BeforeClass	// Passing Browser parameter from TestNG xml
+	public void beforeClass(String browser) {
+		browserName = browser.toLowerCase();
+
+		// If the browser is Firefox, then do this
+		if(browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+			Reporter.log("Open Firefox browser...");
+
+		}else if (browser.equalsIgnoreCase("chrome")) { 
+			driver = new ChromeDriver();
+			Reporter.log("Open Chrome browser...");
 		}
+
+		driver.get(baseURL);
+		driver.manage().window().maximize();
+		Reporter.log("Maximize the web site: " + baseURL);
+	}
+
+	@Test
+	public void verifySearchButton3() throws InterruptedException {
+
+		String search_text = "Google Search";
+		Thread.sleep(2000);
+		WebElement search_button = driver.findElement(By.name("btnK"));
+		String text = search_button.getAttribute("value");
+		Thread.sleep(2000);
+		Assert.assertEquals(text, search_text, "Google Search Text not found!");
+		Reporter.log("Google Search text is found...3");
+	}
+
+	@Test
+	public void verifySearchButton4() throws InterruptedException {
+
+		String search_text = "Google Search";
+		Thread.sleep(2000);
+		WebElement search_button = driver.findElement(By.name("btnK"));
+		String text = search_button.getAttribute("value");
+		Thread.sleep(2000);
+		Assert.assertEquals(text, search_text, "Google Search Text not found!");
+		Reporter.log("Google Search text is found...4");
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		driver.quit();	
+		Reporter.log("Close the browser and end the session...");
 	}
+
 }

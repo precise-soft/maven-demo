@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite parallel="false" name="Suite">
-	<test name="Test">
+<suite name="Test Suite " parallel="tests" thread-count="2">
+	<test name="Test Case 1_Chrome" >
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.tatcs.testPackage.LoadTest01" />
+		</classes>
+	</test>
+
+	<test name="Test Case 2_Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
 			<class name="com.tatcs.testPackage.LoadTest02" />
 		</classes>
-	</test> <!-- Test -->
-</suite> <!-- Suite -->
+	</test>
+</suite>

@@ -1,223 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Open Chrome browser...]]>
+    </line>
+    <line>
+      <![CDATA[Open Firefox browser...]]>
+    </line>
+    <line>
+      <![CDATA[Maximize the web site: https://www.google.com/]]>
+    </line>
+    <line>
+      <![CDATA[Maximize the web site: https://www.google.com/]]>
+    </line>
+    <line>
+      <![CDATA[Google Search text is found...0]]>
+    </line>
+    <line>
+      <![CDATA[Google Search text is found...3]]>
+    </line>
+    <line>
+      <![CDATA[Google Search text is found...1]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser and end the session...]]>
+    </line>
+    <line>
+      <![CDATA[Google Search text is found...4]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser and end the session...]]>
+    </line>
   </reporter-output>
-  <suite started-at="2020-06-22T12:58:42 EDT" name="Suite" finished-at="2020-06-22T12:58:42 EDT" duration-ms="127">
+  <suite started-at="2020-06-22T22:38:08 EDT" name="Test Suite " finished-at="2020-06-22T22:38:24 EDT" duration-ms="16900">
     <groups>
     </groups>
-    <test started-at="2020-06-22T12:58:42 EDT" name="Test" finished-at="2020-06-22T12:58:42 EDT" duration-ms="127">
-      <class name="com.tatcs.testPackage.LoadTest02">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5bfa9431]" started-at="2020-06-22T12:58:42 EDT" name="beforeClass" finished-at="2020-06-22T12:58:42 EDT" duration-ms="5" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:175)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:211)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.tatcs.frameworkPackage.BrowserFactory.getDriver(BrowserFactory.java:44)
-at com.tatcs.testPackage.LoadTest02.beforeClass(LoadTest02.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="returnTicket()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5bfa9431]" started-at="2020-06-22T12:58:42 EDT" name="returnTicket" finished-at="2020-06-22T12:58:42 EDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:175)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:211)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.tatcs.frameworkPackage.BrowserFactory.getDriver(BrowserFactory.java:44)
-at com.tatcs.testPackage.LoadTest02.beforeClass(LoadTest02.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returnTicket -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5bfa9431]" started-at="2020-06-22T12:58:42 EDT" name="afterClass" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1592845122684" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.tatcs.testPackage.LoadTest02 -->
+    <test started-at="2020-06-22T22:38:08 EDT" name="Test Case 1_Chrome" finished-at="2020-06-22T22:38:20 EDT" duration-ms="12050">
       <class name="com.tatcs.testPackage.LoadTest01">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.tatcs.testPackage.LoadTest01@2fd6b6c7]" started-at="2020-06-22T12:58:42 EDT" name="beforeClass" finished-at="2020-06-22T12:58:42 EDT" duration-ms="76" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:175)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:211)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.tatcs.frameworkPackage.BrowserFactory.getDriver(BrowserFactory.java:44)
-at com.tatcs.testPackage.LoadTest01.beforeClass(LoadTest01.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:08 EDT" name="beforeClass" finished-at="2020-06-22T22:38:15 EDT" duration-ms="7195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Open Chrome browser...]]>
+            </line>
+            <line>
+              <![CDATA[Maximize the web site: https://www.google.com/]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifySearchButton()[pri:0, instance:com.tatcs.testPackage.LoadTest01@2fd6b6c7]" started-at="2020-06-22T12:58:42 EDT" name="verifySearchButton" finished-at="2020-06-22T12:58:42 EDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\TandTAdmin\git\myrepo\maven-demo
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:175)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:211)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.tatcs.frameworkPackage.BrowserFactory.getDriver(BrowserFactory.java:44)
-at com.tatcs.testPackage.LoadTest01.beforeClass(LoadTest01.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method signature="verifySearchButton0()[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:15 EDT" name="verifySearchButton0" finished-at="2020-06-22T22:38:17 EDT" duration-ms="2053" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Google Search text is found...0]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- verifySearchButton -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tatcs.testPackage.LoadTest01@2fd6b6c7]" started-at="2020-06-22T12:58:42 EDT" name="afterClass" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1592845122669" status="SKIP">
+        </test-method> <!-- verifySearchButton0 -->
+        <test-method signature="verifySearchButton1()[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:17 EDT" name="verifySearchButton1" finished-at="2020-06-22T22:38:19 EDT" duration-ms="2037" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Google Search text is found...1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchButton1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:19 EDT" name="afterClass" finished-at="2020-06-22T22:38:20 EDT" duration-ms="725" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Close the browser and end the session...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.tatcs.testPackage.LoadTest01 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test Case 1_Chrome -->
+    <test started-at="2020-06-22T22:38:08 EDT" name="Test Case 2_Firefox" finished-at="2020-06-22T22:38:24 EDT" duration-ms="16900">
+      <class name="com.tatcs.testPackage.LoadTest02">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:08 EDT" name="beforeClass" finished-at="2020-06-22T22:38:15 EDT" duration-ms="7019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Open Firefox browser...]]>
+            </line>
+            <line>
+              <![CDATA[Maximize the web site: https://www.google.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="verifySearchButton3()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:15 EDT" name="verifySearchButton3" finished-at="2020-06-22T22:38:19 EDT" duration-ms="4040" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Google Search text is found...3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchButton3 -->
+        <test-method signature="verifySearchButton4()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:19 EDT" name="verifySearchButton4" finished-at="2020-06-22T22:38:23 EDT" duration-ms="4134" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Google Search text is found...4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchButton4 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:23 EDT" name="afterClass" finished-at="2020-06-22T22:38:24 EDT" duration-ms="1668" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Close the browser and end the session...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.tatcs.testPackage.LoadTest02 -->
+    </test> <!-- Test Case 2_Firefox -->
+  </suite> <!-- Test Suite  -->
 </testng-results>
