@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Open Chrome browser...]]>
@@ -14,16 +14,13 @@
       <![CDATA[Maximize the web site: https://www.google.com/]]>
     </line>
     <line>
-      <![CDATA[Google Search text is found...0]]>
+      <![CDATA[Google Search text is found...3]]>
     </line>
     <line>
       <![CDATA[Google Search text is found...3]]>
     </line>
     <line>
-      <![CDATA[Google Search text is found...1]]>
-    </line>
-    <line>
-      <![CDATA[Close the browser and end the session...]]>
+      <![CDATA[Google Search text is found...4]]>
     </line>
     <line>
       <![CDATA[Google Search text is found...4]]>
@@ -31,13 +28,16 @@
     <line>
       <![CDATA[Close the browser and end the session...]]>
     </line>
+    <line>
+      <![CDATA[Close the browser and end the session...]]>
+    </line>
   </reporter-output>
-  <suite started-at="2020-06-22T22:38:08 EDT" name="Test Suite " finished-at="2020-06-22T22:38:24 EDT" duration-ms="16900">
+  <suite started-at="2020-06-23T23:52:29 EDT" name="Test Suite " finished-at="2020-06-23T23:52:47 EDT" duration-ms="18026">
     <groups>
     </groups>
-    <test started-at="2020-06-22T22:38:08 EDT" name="Test Case 1_Chrome" finished-at="2020-06-22T22:38:20 EDT" duration-ms="12050">
-      <class name="com.tatcs.testPackage.LoadTest01">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:08 EDT" name="beforeClass" finished-at="2020-06-22T22:38:15 EDT" duration-ms="7195" status="PASS">
+    <test started-at="2020-06-23T23:52:29 EDT" name="SmokeTest01_Chrome" finished-at="2020-06-23T23:52:45 EDT" duration-ms="16048">
+      <class name="smoketest.SmokeTest01">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:29 EDT" name="beforeClass" finished-at="2020-06-23T23:52:36 EDT" duration-ms="7104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,32 +54,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifySearchButton0()[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:15 EDT" name="verifySearchButton0" finished-at="2020-06-22T22:38:17 EDT" duration-ms="2053" status="PASS">
+        <test-method signature="verifySearchButton0()[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:36 EDT" name="verifySearchButton0" finished-at="2020-06-23T23:52:40 EDT" duration-ms="4066" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Google Search text is found...0]]>
+              <![CDATA[Google Search text is found...3]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchButton0 -->
-        <test-method signature="verifySearchButton1()[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:17 EDT" name="verifySearchButton1" finished-at="2020-06-22T22:38:19 EDT" duration-ms="2037" status="PASS">
+        <test-method signature="verifySearchButton1()[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:40 EDT" name="verifySearchButton1" finished-at="2020-06-23T23:52:45 EDT" duration-ms="4110" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Google Search text is found...1]]>
+              <![CDATA[Google Search text is found...4]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchButton1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tatcs.testPackage.LoadTest01@3901d134]" started-at="2020-06-22T22:38:19 EDT" name="afterClass" finished-at="2020-06-22T22:38:20 EDT" duration-ms="725" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:45 EDT" name="afterClass" finished-at="2020-06-23T23:52:45 EDT" duration-ms="731" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close the browser and end the session...]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.tatcs.testPackage.LoadTest01 -->
-    </test> <!-- Test Case 1_Chrome -->
-    <test started-at="2020-06-22T22:38:08 EDT" name="Test Case 2_Firefox" finished-at="2020-06-22T22:38:24 EDT" duration-ms="16900">
-      <class name="com.tatcs.testPackage.LoadTest02">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:08 EDT" name="beforeClass" finished-at="2020-06-22T22:38:15 EDT" duration-ms="7019" status="PASS">
+      </class> <!-- smoketest.SmokeTest01 -->
+    </test> <!-- SmokeTest01_Chrome -->
+    <test started-at="2020-06-23T23:52:29 EDT" name="SmokeTest02_Firefox" finished-at="2020-06-23T23:52:46 EDT" duration-ms="16425">
+      <class name="smoketest.SmokeTest02">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:29 EDT" name="beforeClass" finished-at="2020-06-23T23:52:36 EDT" duration-ms="6647" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,28 +96,36 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifySearchButton3()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:15 EDT" name="verifySearchButton3" finished-at="2020-06-22T22:38:19 EDT" duration-ms="4040" status="PASS">
+        <test-method signature="verifySearchButton3()[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:36 EDT" name="verifySearchButton3" finished-at="2020-06-23T23:52:40 EDT" duration-ms="4051" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Google Search text is found...3]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchButton3 -->
-        <test-method signature="verifySearchButton4()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:19 EDT" name="verifySearchButton4" finished-at="2020-06-22T22:38:23 EDT" duration-ms="4134" status="PASS">
+        <test-method signature="verifySearchButton4()[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:40 EDT" name="verifySearchButton4" finished-at="2020-06-23T23:52:44 EDT" duration-ms="4116" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Google Search text is found...4]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchButton4 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.tatcs.testPackage.LoadTest02@5276e6b0]" started-at="2020-06-22T22:38:23 EDT" name="afterClass" finished-at="2020-06-22T22:38:24 EDT" duration-ms="1668" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:44 EDT" name="afterClass" finished-at="2020-06-23T23:52:46 EDT" duration-ms="1562" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close the browser and end the session...]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.tatcs.testPackage.LoadTest02 -->
-    </test> <!-- Test Case 2_Firefox -->
+      </class> <!-- smoketest.SmokeTest02 -->
+    </test> <!-- SmokeTest02_Firefox -->
+    <test started-at="2020-06-23T23:52:45 EDT" name="RestAPITest01" finished-at="2020-06-23T23:52:47 EDT" duration-ms="1883">
+      <class name="restapitestpackage.RestAPITest01">
+        <test-method signature="verifyNumber()[pri:0, instance:restapitestpackage.RestAPITest01@460d0a57]" started-at="2020-06-23T23:52:45 EDT" name="verifyNumber" finished-at="2020-06-23T23:52:47 EDT" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumber -->
+      </class> <!-- restapitestpackage.RestAPITest01 -->
+    </test> <!-- RestAPITest01 -->
   </suite> <!-- Test Suite  -->
 </testng-results>
