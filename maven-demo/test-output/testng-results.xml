@@ -1,43 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Open Chrome browser...]]>
-    </line>
-    <line>
-      <![CDATA[Open Firefox browser...]]>
+      <![CDATA[Open a new Chrome...]]>
     </line>
     <line>
       <![CDATA[Maximize the web site: https://www.google.com/]]>
     </line>
     <line>
-      <![CDATA[Maximize the web site: https://www.google.com/]]>
+      <![CDATA[Verify that the hyperlink of 'T and T Consulting Services' is found.]]>
     </line>
     <line>
-      <![CDATA[Google Search text is found...3]]>
-    </line>
-    <line>
-      <![CDATA[Google Search text is found...3]]>
-    </line>
-    <line>
-      <![CDATA[Google Search text is found...4]]>
-    </line>
-    <line>
-      <![CDATA[Google Search text is found...4]]>
-    </line>
-    <line>
-      <![CDATA[Close the browser and end the session...]]>
+      <![CDATA[Verify that the text of 'T and T Consulting Services' is found.]]>
     </line>
     <line>
       <![CDATA[Close the browser and end the session...]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-06-23T23:52:29 EDT" name="Test Suite " finished-at="2020-06-23T23:52:47 EDT" duration-ms="18026">
+  <suite started-at="2020-06-24T23:21:22 EDT" name="Test Suite " finished-at="2020-06-24T23:21:36 EDT" duration-ms="13766">
     <groups>
     </groups>
-    <test started-at="2020-06-23T23:52:29 EDT" name="SmokeTest01_Chrome" finished-at="2020-06-23T23:52:45 EDT" duration-ms="16048">
+    <test started-at="2020-06-24T23:21:22 EDT" name="SmokeTest01_Chrome" finished-at="2020-06-24T23:21:36 EDT" duration-ms="13766">
       <class name="smoketest.SmokeTest01">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:29 EDT" name="beforeClass" finished-at="2020-06-23T23:52:36 EDT" duration-ms="7104" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest01@43301423]" started-at="2020-06-24T23:21:22 EDT" name="beforeClass" finished-at="2020-06-24T23:21:25 EDT" duration-ms="3199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,28 +32,24 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Open Chrome browser...]]>
+              <![CDATA[Open a new Chrome...]]>
             </line>
             <line>
               <![CDATA[Maximize the web site: https://www.google.com/]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifySearchButton0()[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:36 EDT" name="verifySearchButton0" finished-at="2020-06-23T23:52:40 EDT" duration-ms="4066" status="PASS">
+        <test-method signature="verifyTandTPageTitle()[pri:0, instance:smoketest.SmokeTest01@43301423]" started-at="2020-06-24T23:21:25 EDT" name="verifyTandTPageTitle" finished-at="2020-06-24T23:21:35 EDT" duration-ms="9737" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Google Search text is found...3]]>
+              <![CDATA[Verify that the hyperlink of 'T and T Consulting Services' is found.]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- verifySearchButton0 -->
-        <test-method signature="verifySearchButton1()[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:40 EDT" name="verifySearchButton1" finished-at="2020-06-23T23:52:45 EDT" duration-ms="4110" status="PASS">
-          <reporter-output>
             <line>
-              <![CDATA[Google Search text is found...4]]>
+              <![CDATA[Verify that the text of 'T and T Consulting Services' is found.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifySearchButton1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest01@419c5f1a]" started-at="2020-06-23T23:52:45 EDT" name="afterClass" finished-at="2020-06-23T23:52:45 EDT" duration-ms="731" status="PASS">
+        </test-method> <!-- verifyTandTPageTitle -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest01@43301423]" started-at="2020-06-24T23:21:35 EDT" name="afterClass" finished-at="2020-06-24T23:21:36 EDT" duration-ms="780" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close the browser and end the session...]]>
@@ -77,55 +58,5 @@
         </test-method> <!-- afterClass -->
       </class> <!-- smoketest.SmokeTest01 -->
     </test> <!-- SmokeTest01_Chrome -->
-    <test started-at="2020-06-23T23:52:29 EDT" name="SmokeTest02_Firefox" finished-at="2020-06-23T23:52:46 EDT" duration-ms="16425">
-      <class name="smoketest.SmokeTest02">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:29 EDT" name="beforeClass" finished-at="2020-06-23T23:52:36 EDT" duration-ms="6647" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Open Firefox browser...]]>
-            </line>
-            <line>
-              <![CDATA[Maximize the web site: https://www.google.com/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="verifySearchButton3()[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:36 EDT" name="verifySearchButton3" finished-at="2020-06-23T23:52:40 EDT" duration-ms="4051" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Google Search text is found...3]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifySearchButton3 -->
-        <test-method signature="verifySearchButton4()[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:40 EDT" name="verifySearchButton4" finished-at="2020-06-23T23:52:44 EDT" duration-ms="4116" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Google Search text is found...4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifySearchButton4 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest02@78e117e3]" started-at="2020-06-23T23:52:44 EDT" name="afterClass" finished-at="2020-06-23T23:52:46 EDT" duration-ms="1562" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Close the browser and end the session...]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- smoketest.SmokeTest02 -->
-    </test> <!-- SmokeTest02_Firefox -->
-    <test started-at="2020-06-23T23:52:45 EDT" name="RestAPITest01" finished-at="2020-06-23T23:52:47 EDT" duration-ms="1883">
-      <class name="restapitestpackage.RestAPITest01">
-        <test-method signature="verifyNumber()[pri:0, instance:restapitestpackage.RestAPITest01@460d0a57]" started-at="2020-06-23T23:52:45 EDT" name="verifyNumber" finished-at="2020-06-23T23:52:47 EDT" duration-ms="1880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumber -->
-      </class> <!-- restapitestpackage.RestAPITest01 -->
-    </test> <!-- RestAPITest01 -->
   </suite> <!-- Test Suite  -->
 </testng-results>
