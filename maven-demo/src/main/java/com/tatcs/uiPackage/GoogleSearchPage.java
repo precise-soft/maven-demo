@@ -13,7 +13,7 @@ import com.tatcs.frameworkPackage.HighLightElement;
 public class GoogleSearchPage {
 
 	WebDriver driver = null;
-	HighLightElement hle;
+	HighLightElement hle, hle1;
 	
 	@FindBy(how=How.NAME,using="q")
 	@CacheLookup
@@ -37,6 +37,7 @@ public class GoogleSearchPage {
 			searchField.sendKeys(searchText);
 			Thread.sleep(1000);
 			
+			hle1 = new HighLightElement(driver, googleSearchButton);
 			googleSearchButton.click();
 			Thread.sleep(1000);
 			
@@ -48,6 +49,7 @@ public class GoogleSearchPage {
 
 	public boolean isSearchResultExisted(String searchText) {
 		WebElement targetText = driver.findElement(By.partialLinkText(searchText));
+		hle = new HighLightElement(driver, targetText);
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -60,6 +62,7 @@ public class GoogleSearchPage {
 	public void clickLink(String clickableText) {
 		String xpathExpression = "//*[@id=\"rso\"]/div[1]/div/div/div[1]/a[1]/h3";
 		WebElement link = driver.findElement(By.xpath(xpathExpression));
+		hle = new HighLightElement(driver, link);
 		try {
 			if (link.isDisplayed()) {
 				link.click();
@@ -72,14 +75,16 @@ public class GoogleSearchPage {
 	}
 
 	public boolean isTextExisted(String targetText) {
-		String bodyText = driver.findElement(By.tagName("body")).getText();
+		WebElement bodyTextEle = driver.findElement(By.tagName("body"));
+		hle = new HighLightElement(driver, bodyTextEle);
+		
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return bodyText.contains(targetText);
+		return bodyTextEle.getText().contains(targetText);
 	}
 
 

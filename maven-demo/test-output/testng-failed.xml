@@ -7,8 +7,8 @@
       <class name="smoketest.SmokeTest02">
         <methods>
           <include name="afterClass"/>
-          <include name="verifyADPLogin"/>
           <include name="beforeClass"/>
+          <include name="verifyADPLoginPage"/>
         </methods>
       </class> <!-- smoketest.SmokeTest02 -->
     </classes>

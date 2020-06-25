@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test Suite " parallel="tests" thread-count="2">
-	
-	<test name="SmokeTest01_Chrome">
+<!-- 	<test name="SmokeTest01_Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="smoketest.SmokeTest01" />
 		</classes>
-	</test>
+	</test> -->
 
-<!-- 	<test name="SmokeTest02_Firefox">
+	<test name="SmokeTest02_Firefox">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="smoketest.SmokeTest02" />
 		</classes>
-	</test> -->
+	</test>
 	
 <!-- 	<test name="RestAPITest01">
 		<classes>

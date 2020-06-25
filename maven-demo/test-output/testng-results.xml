@@ -1,62 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Open a new Chrome...]]>
+      <![CDATA[Open a new Firefox...]]>
     </line>
     <line>
-      <![CDATA[Maximize the web site: https://www.google.com/]]>
+      <![CDATA[Maximize the web site: https://workforcenow.adp.com/workforcenow/login.html]]>
     </line>
     <line>
-      <![CDATA[Verify that the hyperlink of 'T and T Consulting Services' is found.]]>
+      <![CDATA[The page title of 'Welcome to ADP' is not found.]]>
     </line>
     <line>
-      <![CDATA[Verify that the text of 'T and T Consulting Services' is found.]]>
+      <![CDATA[Verify that the hyperlink of 'Forgot your user ID/password?' is found.]]>
+    </line>
+    <line>
+      <![CDATA[Verify that the error message of 'Logon attempt failed' is found.]]>
+    </line>
+    <line>
+      <![CDATA[The page content of 'We cannot find your account with the information you entered.' is not found.]]>
     </line>
     <line>
       <![CDATA[Close the browser and end the session...]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-06-24T23:21:22 EDT" name="Test Suite " finished-at="2020-06-24T23:21:36 EDT" duration-ms="13766">
+  <suite started-at="2020-06-25T15:07:48 EDT" name="Test Suite " finished-at="2020-06-25T15:08:52 EDT" duration-ms="64933">
     <groups>
     </groups>
-    <test started-at="2020-06-24T23:21:22 EDT" name="SmokeTest01_Chrome" finished-at="2020-06-24T23:21:36 EDT" duration-ms="13766">
-      <class name="smoketest.SmokeTest01">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest01@43301423]" started-at="2020-06-24T23:21:22 EDT" name="beforeClass" finished-at="2020-06-24T23:21:25 EDT" duration-ms="3199" status="PASS">
+    <test started-at="2020-06-25T15:07:48 EDT" name="SmokeTest02_Firefox" finished-at="2020-06-25T15:08:52 EDT" duration-ms="64933">
+      <class name="smoketest.SmokeTest02">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:smoketest.SmokeTest02@2f112965]" started-at="2020-06-25T15:07:48 EDT" name="beforeClass" finished-at="2020-06-25T15:07:57 EDT" duration-ms="8985" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Open a new Chrome...]]>
+              <![CDATA[Open a new Firefox...]]>
             </line>
             <line>
-              <![CDATA[Maximize the web site: https://www.google.com/]]>
+              <![CDATA[Maximize the web site: https://workforcenow.adp.com/workforcenow/login.html]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyTandTPageTitle()[pri:0, instance:smoketest.SmokeTest01@43301423]" started-at="2020-06-24T23:21:25 EDT" name="verifyTandTPageTitle" finished-at="2020-06-24T23:21:35 EDT" duration-ms="9737" status="PASS">
+        <test-method signature="verifyADPLoginPage()[pri:0, instance:smoketest.SmokeTest02@2f112965]" started-at="2020-06-25T15:07:57 EDT" name="verifyADPLoginPage" finished-at="2020-06-25T15:08:44 EDT" duration-ms="47721" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //a[contains(text(),'These is no way!')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-DAWSONWU', ip: '10.6.0.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 20204, moz:profile: C:\Users\TandTAdmin\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25d3c1e9-fa5e-4e58-b2ac-cdc285f80175
+*** Element info: {Using=xpath, value=//a[contains(text(),'These is no way!')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(text(),'These is no way!')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-DAWSONWU', ip: '10.6.0.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 20204, moz:profile: C:\Users\TandTAdmin\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25d3c1e9-fa5e-4e58-b2ac-cdc285f80175
+*** Element info: {Using=xpath, value=//a[contains(text(),'These is no way!')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.tatcs.uiPackage.ADPLoginPage.isLinkExist(ADPLoginPage.java:83)
+at smoketest.SmokeTest02.verifyADPLoginPage(SmokeTest02.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[Verify that the hyperlink of 'T and T Consulting Services' is found.]]>
+              <![CDATA[The page title of 'Welcome to ADP' is not found.]]>
             </line>
             <line>
-              <![CDATA[Verify that the text of 'T and T Consulting Services' is found.]]>
+              <![CDATA[Verify that the hyperlink of 'Forgot your user ID/password?' is found.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyTandTPageTitle -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest01@43301423]" started-at="2020-06-24T23:21:35 EDT" name="afterClass" finished-at="2020-06-24T23:21:36 EDT" duration-ms="780" status="PASS">
+        </test-method> <!-- verifyADPLoginPage -->
+        <test-method signature="verifyADPLogin()[pri:1, instance:smoketest.SmokeTest02@2f112965]" started-at="2020-06-25T15:08:44 EDT" name="verifyADPLogin" finished-at="2020-06-25T15:08:51 EDT" duration-ms="7142" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Verify that the error message of 'Logon attempt failed' is found.]]>
+            </line>
+            <line>
+              <![CDATA[The page content of 'We cannot find your account with the information you entered.' is not found.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyADPLogin -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:smoketest.SmokeTest02@2f112965]" started-at="2020-06-25T15:08:51 EDT" name="afterClass" finished-at="2020-06-25T15:08:52 EDT" duration-ms="1035" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close the browser and end the session...]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- smoketest.SmokeTest01 -->
-    </test> <!-- SmokeTest01_Chrome -->
+      </class> <!-- smoketest.SmokeTest02 -->
+    </test> <!-- SmokeTest02_Firefox -->
   </suite> <!-- Test Suite  -->
 </testng-results>

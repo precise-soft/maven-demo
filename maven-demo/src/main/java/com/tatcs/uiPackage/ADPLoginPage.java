@@ -50,8 +50,10 @@ public class ADPLoginPage {
 		String message= null;
 		try {
 			WebElement textElement = driver.findElement(By.cssSelector(".titlesred"));
+			hle = new HighLightElement(driver,textElement);
 			Thread.sleep(1000);
 			message = textElement.getText();
+			
 		}
 		catch( InterruptedException e) {
 			e.printStackTrace();
@@ -60,17 +62,33 @@ public class ADPLoginPage {
 	}
 
 	public boolean isTextExist(String targetText) {
-		boolean exist= false;
+		boolean existText= false;
 		try {
-			String xpathExpression = "//*[contains(text(),'" + targetText+ "')]";
-			WebElement target = driver.findElement(By.xpath(xpathExpression));
+			String textXpathExpression = "//*[contains(text(),'" + targetText+ "')]";
+			WebElement targetTextEle = driver.findElement(By.xpath(textXpathExpression));
+			hle = new HighLightElement(driver,targetTextEle);
 			Thread.sleep(1000);
-			exist = target.isEnabled();
+			existText = targetTextEle.isEnabled();
 		}
 		catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		return exist;
+		return existText;
 	}
 
+	public boolean isLinkExist(String targetLink) {
+		boolean existLink= false;
+		try {
+			String linkXpathExpression = "//a[contains(text(),'" + targetLink+ "')]";
+			WebElement targetLinkEle = driver.findElement(By.xpath(linkXpathExpression));
+			hle = new HighLightElement(driver,targetLinkEle);
+			Thread.sleep(1000);
+			existLink = targetLinkEle.isEnabled();
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		return existLink;
+	}
+	
 }
