@@ -6,6 +6,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -13,25 +15,30 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.tatcs.frameworkPackage.BrowserFactory;
+import com.tatcs.frameworkPackage.CaptureScreenShot;
 import com.tatcs.uiPackage.ADPLoginPage;
 
 
 public class SmokeTest02 {
 	public WebDriver driver;
+	public CaptureScreenShot capture;
 	public String browserName;
 	public String baseURL="https://workforcenow.adp.com/workforcenow/login.html"; 
-	ADPLoginPage alp; 
+	ADPLoginPage alp;
 
 	@SuppressWarnings("static-access")
 	@Parameters("browser")
 
 	@BeforeClass	// Passing Browser parameter from TestNG xml
-	public void beforeClass(String browser) {
+	public void beforeClass(String browser, ITestContext context) {
 		browserName = browser.toLowerCase();
 
 		BrowserFactory bf = new BrowserFactory();
 		driver = bf.getDriver(browser);
 		bf.openNewBrowser(baseURL);
+		
+		context.setAttribute("WebDriver", driver);	//Save WebDriver to Test Context
+		
 		alp = PageFactory.initElements(driver, ADPLoginPage.class);
 	}
 
@@ -46,7 +53,7 @@ public class SmokeTest02 {
 		Reporter.log("Verify that the hyperlink of 'Forgot your user ID/password?' is found.");
 		System.out.println("Verify that the hyperlink of 'Forgot your user ID/password?' is found.");
 		
-		assertTrue(alp.isLinkExist("These is no way!"), "The hyperlink of 'Administrator Sign In' is not found.");
+		assertTrue(alp.isLinkExist("Administrator Sign In"), "The hyperlink of 'Administrator Sign In' is not found.");
 		Reporter.log("Verify that the hyperlink of 'Administrator Sign In' is found.");
 		System.out.println("Verify that the hyperlink of 'Administrator Sign In' is found.");
 		
@@ -66,6 +73,12 @@ public class SmokeTest02 {
 	}
 
 
+	@Test (priority = 2)
+	public void verifyFailureInSmokeTest02() throws InterruptedException {
+		Assert.assertTrue(false);
+
+	}
+	
 	@AfterClass
 	public void afterClass() {
 		driver.quit();	

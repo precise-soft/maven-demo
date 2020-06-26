@@ -7,6 +7,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Load Testing</name>
 	<description>Selenium Load Testing Example Using TestNG and Maven</description>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suiteXmlFile>testng.xml</suiteXmlFile>
+		<skipTests>true</skipTests>
+		<selenium.version>3.141.59</selenium.version>
+		<testng.version>7.1.0</testng.version>
+		<junit.version>4.13</junit.version>
+	</properties>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -23,13 +32,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
-					<!-- <suiteXmlFiles> <suiteXmlFile>${basedir}/testng.xml</suiteXmlFile> 
-						</suiteXmlFiles> -->
-					<!-- c:\Temp>java org.testng.TestNG -groups regressiontest - testname 
-						AllTests -->
-					<!--<groups>regressiontest</groups> -->
-					<!-- <trimStackTrace>false</trimStackT;race> -->
-					<!--<suitename>AllTests</suitename> -->
 					<suiteXmlFiles>
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
@@ -42,15 +44,7 @@
 			<!-- <resource> <directory>src/test/resources</directory> </resource> -->
 		</resources>
 	</build>
-	<!-- Add Following Lines in Your POM File -->
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<suiteXmlFile>testng.xml</suiteXmlFile>
-		<skipTests>true</skipTests>
-		<selenium.version>3.141.59</selenium.version>
-		<testng.version>7.1.0</testng.version>
-		<junit.version>4.13</junit.version>
-	</properties>
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>

@@ -10,39 +10,39 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 
 public class CaptureScreenShot {
-	public CaptureScreenShot(){
-		 
+	WebDriver driver;
+	
+	public CaptureScreenShot(WebDriver driver){
+		this.driver = driver;
 	}
-	public static void getScreenShot(WebDriver driver, String filepath) {
+	
+	public void getScreenShot(String filepath) {
 		try {
-		System.out.println("In getScreenShot method");
-		TakesScreenshot ts = (TakesScreenshot)driver;
-		System.out.println("before getScreenshotAs");
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		System.out.println("After getScreenshotAs");
-		FileUtils.copyFile(source, new File(filepath));
+			TakesScreenshot ts = (TakesScreenshot)driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(source, new File(filepath));
 		} catch (WebDriverException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		}
-		 
-		public static String getDateTimeStamp(){
+	}
+
+	public String getDateTimeStamp(){
 		Date oDate;
 		String[] sDatePart;
 		String sDateStamp;
 		oDate = new Date();
-		System.out.println(oDate.toString());
+
 		sDatePart = oDate.toString().split(" ");
 		sDateStamp = sDatePart[5] + "_" +
-		sDatePart[1] + "_" +
-		sDatePart[2] + "_" +
-		sDatePart[3] ;
+				sDatePart[1] + "_" +
+				sDatePart[2] + "_" +
+				sDatePart[3] ;
 		sDateStamp = sDateStamp.replace(":", "_");
 		System.out.println(sDateStamp);
 		return sDateStamp;}
-		 
+
 }

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test Suite " parallel="tests" thread-count="2">
-<!-- 	<test name="SmokeTest01_Chrome">
+	<listeners>
+		<listener class-name="com.tatcs.frameworkPackage.TestListener" />
+	</listeners>
+	
+	<test name="SmokeTest01_Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="smoketest.SmokeTest01" />
 		</classes>
-	</test> -->
+	</test>
 
 	<test name="SmokeTest02_Firefox">
 		<parameter name="browser" value="firefox" />
@@ -14,11 +18,11 @@
 			<class name="smoketest.SmokeTest02" />
 		</classes>
 	</test>
-	
-<!-- 	<test name="RestAPITest01">
+
+	<test name="RestAPITest01">
 		<classes>
 			<class name="restapitestpackage.RestAPITest01" />
 		</classes>
-	</test> -->
-		
+	</test>
+
 </suite>

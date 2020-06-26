@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Test Suite ]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tatcs.frameworkPackage.TestListener"/>
+  </listeners>
   <test thread-count="2" parallel="tests" name="SmokeTest02_Firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="smoketest.SmokeTest02">
         <methods>
           <include name="afterClass"/>
+          <include name="verifyFailureInSmokeTest02"/>
           <include name="beforeClass"/>
-          <include name="verifyADPLoginPage"/>
         </methods>
       </class> <!-- smoketest.SmokeTest02 -->
     </classes>
